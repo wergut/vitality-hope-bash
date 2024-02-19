@@ -1,0 +1,680 @@
+.page-header {
+  margin-top: 0;
+  margin-bottom: 130px;
+
+  .page-header-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 54px;
+    align-items: center;
+  }
+}
+
+.hope-banner {
+  margin-top: 130px;
+  position: relative;
+  overflow: hidden;
+
+  &:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 467px;
+    height: 467px;
+    z-index: 1;
+    background-image: url(../img/page-decor-img.png);
+  }
+
+  .banner-content {
+    padding-top: 50px;
+
+    .title {
+      font-size: 80px;
+      font-weight: 900;
+      color: $--color-blue;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      margin-bottom: 70px;
+    }
+
+    .btns-wrapper {
+      display: flex;
+      width: 100%;
+      align-items: center;
+
+      .banner-link {
+        font-size: 14px;
+        font-weight: 500;
+        margin-left: 60px;
+        color: $--color-default;
+        &:hover {
+          color: $--color-blue;
+        }
+      }
+    }
+
+  }
+
+  .banner-image {
+
+    img {
+      height: 507px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+  }
+
+}
+
+.hope-about {
+
+  .hope-about-content {
+    padding-right: 150px;
+
+    .title-block {
+      margin-bottom: 25px;
+    }
+
+    .description {
+      margin-bottom: 64px;
+    }
+    .sponsors {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+
+      img {
+        height: 40px;
+        object-fit: contain;
+      }
+    }
+    .sponsors-text {
+
+      p {
+        font-size: 23px;
+        font-weight: 400;
+        color: $--color-grey-light;
+      }
+    }
+  }
+
+  .hope-image {
+    position: absolute;
+    left: -140px;
+    top: -90px;
+
+    .image-decoration {
+      width: 298px;
+      height: 298px;
+      background-color: $--color-white;
+      border-radius: 50%;
+      border: 1px solid rgba(217, 217, 217, 1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    img {
+      max-width: 202px;
+      width: 100%;
+      height: 202px;
+      object-fit: contain;
+      z-index: 1;
+    }
+  }
+
+  .about-card-stat {
+    padding: 78px 35px 14px 50px;
+    background-image: url(../img/stat-block-back.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+
+    .stat-item {
+      display: flex;
+      justify-content: center;
+      width: 50%;
+      flex-wrap: wrap;
+      margin-bottom: 64px;
+
+      &:nth-of-type(odd) {
+        padding-right: 25px;
+      }
+
+      &:nth-of-type(even) {
+        padding-left: 25px;
+      }
+
+      .stat-title {
+        font-size: 28px;
+        font-weight: 900;
+        color: $--color-blue;
+        margin-bottom: 5px;
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      .stat-description {
+        font-size: 16px;
+        color: $--color-grey;
+        font-weight: 400;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      .stat-description-average {
+        max-width: 90%;
+      }
+
+      .stat-description-short {
+        max-width: 60%;
+      }
+
+    }
+  }
+
+}
+
+.hope-date {
+
+  .date-card {
+    background-color: $--color-light-blue;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 50px;
+    border-radius: 10px;
+
+    .date-title {
+      font-size: 33px;
+      font-weight: 600;
+      color: $--color-blue;
+      margin-bottom: 15px;
+    }
+
+    .date-description {
+      font-size: 33px;
+      font-weight: 500;
+      color: $--color-default;
+      max-width: 90%;
+    }
+  }
+  .date-card-location {
+
+    .date-description {
+      max-width: 70%;
+    }
+  }
+
+  .map-wrapper {
+    height: 500px;
+    width: 100%;
+
+    iframe {
+      height: inherit;
+      width: 100%;
+      border: none;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+
+}
+
+.renew-about {
+  position: relative;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 520px;
+    height: 520px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    bottom: -20%;
+    background-image: url(../img/about-decor-img.png);
+  }
+
+  .about-image {
+
+    img {
+      height: 609px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+  }
+  .about-content {
+    margin-bottom: 40px;
+
+    .description {
+      margin-bottom: 30px;
+
+      p {
+        max-width: 65%;
+      }
+    }
+  }
+}
+
+.team-section {
+  position: relative;
+  overflow: hidden;
+
+  .title-block {
+    margin-bottom: 40px;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .swiper-button-prev, .swiper-button-next {
+    top: 110px;
+  }
+
+  .swiper-button-next {
+    right: 0;
+  }
+
+  .swiper-button-prev {
+    right: 120px;
+    left: initial;
+    transform: rotate(180deg);
+  }
+
+  .swiper-button-disabled {
+    opacity: 1!important;
+
+    svg path {
+      fill: $--color-grey-light;
+    }
+  }
+
+  .staff-slider {
+    max-width: 100%;
+    position: relative;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 1000px;
+      height: 550px;
+      position: absolute;
+      left: -1000px;
+      top: 0;
+      background-color: $--color-white;
+      z-index: 2;
+    }
+
+
+    .swiper-scrollbar {
+      display: none;
+    }
+
+    .swiper-slide {
+
+      &:nth-of-type(odd) {
+        width: 870px;
+      }
+      &:nth-of-type(even)  {
+        width: 650px;
+      }
+    }
+
+    .image-wrapper {
+
+      img {
+        height: 527px;
+        object-fit: cover;
+        width: 100%;
+        border-radius: 20px;
+      }
+    }
+  }
+}
+
+.hope-programs {
+  margin-bottom: 140px;
+
+  .title {
+    font-size: 47px;
+    font-weight: 400;
+    color: $--color-default;
+  }
+
+  .program-card {
+    padding: 50px 30px 45px;
+    background-color: $--color-light-blue;
+    height: 381px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+
+    .program-title {
+      font-size: 33px;
+      font-weight: 600;
+      margin-bottom: 25px;
+      color: $--color-blue;
+    }
+
+    .btn {
+      max-width: 100%;
+    }
+  }
+}
+
+.title-block-tablet {
+  display: none;
+}
+
+@media (max-width: 1920px) {
+  .team-section .swiper-button-prev {
+    right: 195px;
+  }
+  .team-section .swiper-button-next {
+    right: 75px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .hope-banner .banner-content .title {
+    font-size: 70px;
+  }
+  .hope-about .hope-about-content {
+    padding-right: 100px;
+  }
+  .hope-about .about-card-stat {
+    background-color: $--color-light-blue;
+
+    .stat-item {
+      margin-bottom: 35px;
+    }
+  }
+  .hope-about .hope-image {
+    position: absolute;
+    left: -140px;
+    top: -90px;
+    background: #fff;
+    border-radius: 50%;
+    width: 280px;
+    height: 270px;
+  }
+  .hope-about .hope-image .image-decoration {
+    width: 268px;
+    height: 258px;
+  }
+  .hope-about .hope-image img {
+    max-width: 172px;
+    height: 172px;
+  }
+  .hope-date .date-card {
+    height: 420px;
+  }
+  .hope-date .map-wrapper {
+    height: 420px;
+  }
+  .hope-date .date-card .date-title {
+    font-size: 28px;
+  }
+  .hope-date .date-card .date-description {
+    font-size: 28px;
+    max-width: 100%;
+  }
+  .hope-programs .program-card {
+    height: 400px;
+  }
+  .hope-programs .program-card .program-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .hope-banner .banner-content .title {
+    font-size: 60px;
+  }
+  .hope-about .about-card-stat .stat-item .stat-description-short {
+    max-width: 90%;
+  }
+  .hope-about .about-card-stat .stat-item .stat-description-average {
+    max-width: 100%;
+  }
+  .hope-about .about-card-stat .stat-item:nth-of-type(odd) {
+    padding-right: 10px;
+  }
+  .hope-about .about-card-stat .stat-item:nth-of-type(even) {
+    padding-left: 10px;
+  }
+  .hope-about .hope-image .image-decoration {
+    width: 209px;
+    height: 209px;
+  }
+  .hope-about .about-card-stat {
+    background-size: 135%;
+  }
+  .hope-about .hope-image img {
+    width: 144px;
+    height: 144px;
+  }
+  .hope-about .hope-image {
+    left: -110px;
+    top: -70px;
+    width: 220px;
+    height: 220px
+  }
+  .hope-about .hope-about-content {
+    padding-right: 0;
+  }
+  .hope-date .date-card {
+    padding: 30px;
+  }
+  .hope-date .date-card .date-description {
+    font-size: 24px;
+  }
+  .hope-date .col-lg-4 .date-card .date-description {
+    max-width: 70%;
+  }
+  .hope-date .date-card .date-title {
+    font-size: 26px;
+  }
+  .hope-programs .program-card {
+    padding: 30px;
+  }
+  .renew-about:after {
+    width: 420px;
+    height: 420px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .page-header {
+    margin-bottom: 40px;
+  }
+  .hope-banner .banner-image img {
+    height: 335px;
+    object-position: 0 0;
+  }
+  .hope-banner {
+    margin-top: 40px;
+
+    .banner-image {
+      margin-bottom: 50px;
+    }
+
+    .banner-content {
+      padding-top: 0;
+
+      .title {
+        margin-bottom: 18px;
+      }
+      .description {
+        margin-bottom: 45px;
+      }
+    }
+    .col-lg-6:nth-of-type(2) {
+      order: -1;
+    }
+  }
+  .hope-about .hope-about-content .description {
+    margin-bottom: 40px;
+  }
+  .hope-about .about-card-stat {
+    margin-top: 150px;
+    padding: 130px 30px 0;
+  }
+  .hope-about .hope-image {
+    left: 35%;
+    top: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 230px;
+    height: 230px;
+  }
+  .hope-about .about-card-stat .stat-item {
+    margin-bottom: 64px;
+  }
+  .hope-about .about-card-stat .stat-item .stat-description {
+    max-width: 80%;
+  }
+  .hope-about .about-card-stat .stat-item .stat-description-short {
+    max-width: 60%;
+  }
+  .hope-date .date-card {
+    height: 339px;
+    padding: 50px 23px;
+  }
+  .hope-date .date-card .date-title {
+    font-size: 33px;
+  }
+  .hope-date .date-card .date-description {
+    font-size: 33px;
+    max-width: 80%;
+  }
+  .hope-date .map-wrapper {
+    margin-top: 24px;
+    height: 296px;
+  }
+  .title-block-tablet {
+    display: block;
+  }
+  .title-block-pc {
+    display: none;
+  }
+  .renew-about .title-block {
+    margin-bottom: 20px;
+  }
+  .renew-about .about-image img {
+    height: 399px;
+    object-position: 0 0;
+  }
+  .renew-about .about-image  {
+    margin-bottom: 55px;
+  }
+  .renew-about .about-content .description p {
+    max-width: 100%;
+  }
+  .renew-about .about-content .description {
+    margin-bottom: 50px;
+  }
+  .hope-banner:after {
+    display: none;
+  }
+  .hope-about {
+    position: relative;
+
+    .container {
+      padding: 0 40px;
+    }
+
+    .hope-about-content {
+      padding: 0 29px;
+
+      &:after {
+        content: "";
+        display: block;
+        width: 233px;
+        height: 365px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        position: absolute;
+        right: 0;
+        bottom: 40%;
+        background-image: url(../img/tablet-decor-img.png);
+        z-index: 1;
+      }
+    }
+  }
+  .team-section .title-block {
+    line-height: 98px;
+  }
+  .team-section .swiper-button-prev, .team-section .swiper-button-next {
+    top: 165px;
+  }
+  .team-section .staff-slider .swiper-slide:nth-of-type(odd) {
+    width: 628px;
+  }
+  .team-section .staff-slider .swiper-slide:nth-of-type(even) {
+    width: 456px;
+  }
+  .team-section .staff-slider:before {
+    top: -1px;
+  }
+  .team-section .staff-slider {
+    padding-bottom: 28px;
+  }
+  .team-section .staff-slider .swiper-scrollbar {
+    display: block;
+    bottom: 0;
+    height: 8px;
+    background-color: $--color-light-blue;
+
+    .swiper-scrollbar-drag {
+      background-color: $--color-blue;
+    }
+  }
+  .team-section {
+    margin-bottom: 150px;
+  }
+  .hope-programs .title {
+    margin-bottom: 50px;
+
+    br {
+      display: none;
+    }
+  }
+  .hope-programs .program-card {
+    height: 381px;
+    margin-bottom: 24px;
+  }
+  .hope-programs .col-lg-3 .program-card {
+    max-width: 55%;
+  }
+  .hope-programs {
+    margin-bottom: 84px;
+  }
+  .renew-about:after {
+    width: 280px;
+    height: 280px;
+    bottom: 25%;
+  }
+}

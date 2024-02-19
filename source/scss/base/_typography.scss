@@ -1,0 +1,43 @@
+* {
+  font-family: $--font-default;
+  line-height: initial;
+}
+
+.title-block {
+  font-family: $--font-title;
+  font-size: 60px;
+  font-weight: 400;
+  color: $--color-blue;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+p {
+  color: $--color-grey;
+  font-size: 16px;
+  font-weight: 300;
+
+  &:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+@media (max-width: 1511px) {
+  .title-block {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .title-block {
+    font-size: 60px;
+  }
+}
